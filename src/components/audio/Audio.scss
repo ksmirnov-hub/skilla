@@ -1,0 +1,55 @@
+.audio {
+  display: none;
+}
+
+.current-time {
+  width: 37px;
+  height: 22px;
+  
+}
+
+.control {
+  margin-right: 10px;
+}
+
+.download {
+    &:hover {
+      cursor: pointer;
+      & > div > svg > path{
+        fill: rgba(0, 44, 251, 1);
+      }
+  }
+}
+
+.progress-bar-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.progress-bar {
+  width: 164px;
+  height: 4px;
+  border-radius: 50px;
+  background-color: rgba(173, 191, 223, 1);
+
+  & > div {
+    height: 4px;
+    background-color: rgba(0, 44, 251, 1);
+  }
+}
+
+.custom-player {
+  align-items: center;
+    display: flex;
+    padding: 14px 18px 14px 18px;
+    width: 352px;
+    height: 48px;
+    border-radius: 48px;
+    opacity: 0px;
+    background-color: rgba(234, 240, 250, 0.99);
+
+    & > div {
+      margin-right: 12px;
+    }
+}

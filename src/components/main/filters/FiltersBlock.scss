@@ -1,0 +1,119 @@
+.filters {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(241, 244, 249, 1);
+    color: rgba(94, 119, 147, 1);
+    font-family: 'SF Pro Display';
+    font-size: 14px;
+    font-weight: 400 !important;
+    line-height: 20.72px;
+    text-align: left;
+}
+
+.button {
+    color: rgba(94, 119, 147, 1);
+    font-family: 'SF Pro Display';
+    font-size: 14px;
+    font-weight: 400 !important;
+}
+
+.chakra-menu__menuitem {
+    font-family: 'SF Compact Display';
+    font-size: 12px;
+    font-weight: 400 !important;
+    color: rgba(43, 45, 51, 1);
+    &.selected {
+        color: rgba(1, 94, 245, 1);
+    }
+    &:hover {
+        background: rgba(222, 228, 255, 1);
+    }
+}
+
+.chakra-button[data-active],
+.chakra-button[aria-expanded] {
+    background-color: rgba(241, 244, 249, 1) !important;
+}
+
+.chakra-button__icon > .up {
+    & > path {
+        fill: rgba(0, 44, 251, 1);
+    }
+}
+
+.reset {
+    width: 137px;
+    height: 24px;
+    font-family: 'SF Pro Display';
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    line-height: 24px !important;
+    color: rgba(94, 119, 147, 1) !important;
+
+    background: rgba(241, 244, 249, 1) !important;
+
+    & > span > svg > path {
+        fill: rgba(173, 191, 223, 1);
+    }
+    &:hover {
+        background: rgba(241, 244, 249, 1) !important;
+    }
+}
+
+.selection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'SF Pro Display';
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    line-height: 24px !important;
+    color: rgba(94, 119, 147, 1) !important;
+    width: auto;
+    column-gap: 8px;
+}
+
+.date-picker {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    align-items: baseline;
+}
+
+.custom-input {
+    border: none;
+    outline: none;
+    width: 60px;
+    height: 15px;
+    color: rgba(173, 191, 223, 1);
+}
+
+.date-select {
+    &:hover {
+        background: rgba(222, 228, 255, 1);
+    }
+    .title {
+        font-family: 'SF Compact Display';
+        font-size: 12px;
+        font-weight: 400 !important;
+        color: rgba(43, 45, 51, 1);
+
+        &.selected {
+            color: rgba(1, 94, 245, 1);
+        }
+    }
+    padding-left: 12px;
+    font-size: 12px;
+
+    & > div:nth-child(2) {
+        padding-right: 26.4px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.react-datepicker {
+    position: absolute;
+    background-color: white;
+    left: 0px;
+}
